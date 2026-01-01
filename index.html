@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MonoNote</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              app: {
+                bg: '#000000',
+                text: '#FFFFFF',
+                accent1: '#E94079',
+                accent2: '#EBB369',
+                accent3: '#DEF169',
+                accent4: '#73DF5C',
+                accent5: '#55A9D2',
+                accent6: '#64D1FB',
+                accent7: '#8E73EF',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body, html {
+        background-color: #000000;
+        color: #FFFFFF;
+        height: 100%;
+        overflow: hidden;
+      }
+      /* Subtle Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      /* Hide browser focus rings for a cleaner look */
+      *:focus {
+        outline: none;
+      }
+      ::selection {
+        background: rgba(255, 255, 255, 0.2);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "date-fns": "https://esm.sh/date-fns@^4.1.0",
+    "mathjs": "https://esm.sh/mathjs@^15.1.0",
+    "slate-history": "https://esm.sh/slate-history@^0.113.1",
+    "is-url": "https://esm.sh/is-url@^1.2.4",
+    "slate": "https://esm.sh/slate@^0.120.0",
+    "slate-react": "https://esm.sh/slate-react@^0.120.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
